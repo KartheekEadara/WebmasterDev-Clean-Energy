@@ -1,0 +1,134 @@
+body {
+  background-color: #d6d8df; /* Light green background */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #e7e8ed;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.navbar img {
+  height: 70px;
+}
+
+.navbar .logo {
+  margin-right: auto;
+}
+
+.navbar .linka {
+  display: flex;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+.navbar .linkb {
+  display: flex;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+
+.navbar a:last-child {
+  margin-left: auto;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  border-radius: 25px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+
+.intro-heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.parallax-container {
+  height: 250vh;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+.parallax-content img {
+  width: 100%;
+  height: auto;
+}
+
+.parallax-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: Arial;
+}
+
+
+.introductory-content {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff; /* Background color for introductory content */
+  margin-top: 0px; /* Move the introductory content down */
+}
+
+.energy-types-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow energy types to wrap to the next line if needed */
+  justify-content: space-around;
+  background-color: #d6d8df; /* Background color for energy types container */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.energy-type {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #1c82f0; /* Add border around each energy type */
+}
+
+.energy-type img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.energy-type-content {
+  margin-top: 10px;
+}
+
+/* Customize styles as needed */
+
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+ }
+
+ @media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+ }
+
+ .show {
+  opacity: 1;
+ }
