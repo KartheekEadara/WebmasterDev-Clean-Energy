@@ -1,3 +1,5 @@
+//Parallax & Fade in code
+
 document.addEventListener('DOMContentLoaded', function () {
     const parallaxImage = document.querySelector('.parallax-content img');
   
