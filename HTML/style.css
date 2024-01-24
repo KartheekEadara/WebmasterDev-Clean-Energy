@@ -1,26 +1,27 @@
 body {
-  background-color: #d6d8df; /* Light green background */
+  background: linear-gradient(to bottom, #d6d8df, #ffffff);
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Change font to 'Roboto' */
   overflow-x: hidden;
 }
- /* Navigation */
+
+/* Navigation bar improvements */
 .navbar {
-  background-color: #000000;
-  overflow: hidden;
+  background-color: #d6d8df; /* Update navigation bar color */
   position: sticky;
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 14px 30px;
+  padding: 14px 0;
 }
 
 .navbar a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   padding: 14px 16px;
+  transition: color 0.3s; /* Add transition effect */
 }
 
 .navbar img {
@@ -29,33 +30,45 @@ body {
 
 .navbar .logo {
   margin-right: auto;
+  margin-left: 20px;
 }
 
+/* Update linka and linkb for slight left alignment */
+/* Update linka and linkb for slight left alignment with padding */
+/* Update linka and linkb for slight left alignment with padding and circular hover */
 .navbar .linka {
   display: flex;
   border-radius: 25px;
   border: 2px solid #73AD21;
+  margin-right: 10px; /* Adjusted margin for a little left alignment */
+  padding: 8px 14px; /* Added padding for hover effect */
+  transition: border-radius 0.3s; /* Added transition for a smooth effect */
 }
+
 .navbar .linkb {
   display: flex;
   border-radius: 25px;
   border: 2px solid #73AD21;
+  margin-left: 10px; /* Adjusted margin for a little left alignment */
+  margin-right: 10px; /* Adjusted margin for a little left alignment */
+  padding: 8px 14px; /* Added padding for hover effect */
+  transition: border-radius 0.3s; /* Added transition for a smooth effect */
 }
 
 .navbar a:last-child {
   margin-left: auto;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  border-radius: 25px;
+.navbar a:hover {
+  color: #000000; /* Change link color on hover */
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
 }
 
  /* Parallax + Images */
 .intro-heading {
   text-align: center;
   margin-top: 20px;
+  font-size: 30px;
 }
 
 .parallax-container {
@@ -76,17 +89,20 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
-  font-size: 60px;
-  font-family: Arial;
-  text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
+  font-size: 60px; /* Adjust font size */
+  font-weight: bold; /* Add font weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
-
+/* Update introductory content style */
 .introductory-content {
   text-align: center;
   padding: 50px;
   background-color: #fff;
-  margin-top: 0px; /* To adjust it in the y-axis */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 /* Energy Sources Content*/
@@ -117,6 +133,16 @@ body {
 
 .energy-type-content {
   margin-top: 10px;
+}
+
+.energy-type-content a {
+  text-decoration: none;
+  font-size: 18px; /* Adjust font size */
+  color: #1c82f0;
+}
+
+.energy-type-content a:hover {
+  text-decoration: underline;
 }
 
 /* Fade-in for energy sources */
