@@ -97,11 +97,12 @@ a {
   height: 250vh;
   overflow: hidden;
   margin-left: 0;
+  transition: width 1s ease-in-out; /* Add a transition for smooth animation */
 }
 
 .parallax-content img {
   width: 100%;
-  height: auto;
+  height: 825px;
   top: 20%;
   z-index: 0;
 }
@@ -127,6 +128,16 @@ a {
   margin-top: 20px;
   font-size: 20px;
   line-height: 150%;
+  width: 600px;
+}
+
+.energy-whole img{
+  float: right;
+  color: #000000;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  height: 290px;
+  width: 600px;
 }
 
 /* Energy Sources Content*/
@@ -135,7 +146,7 @@ a {
   display: flex;
   flex-wrap: wrap; /* Allow energy types to wrap to the next line if needed */
   justify-content: space-around;
-  background-color: #d6d8df;
+  background-color: #f8f6f6e5;
   padding: 20px;
   margin-top: 20px;
 }
@@ -157,16 +168,19 @@ a {
 
 .energy-type-content {
   margin-top: 10px;
+  font-size: 16px;
+  line-height: 155%;
 }
 
 .energy-type-content a {
   text-decoration: none;
-  font-size: 18px; /* Adjust font size */
+  font-size: 22px; /* Adjust font size */
   color: #1c82f0;
+  line-height: 160%;
 }
 
 .energy-type-content a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Fade-in for energy sources */
