@@ -115,7 +115,7 @@
   
   @keyframes header-image-animation {
     25% {opacity: 1;}
-    85%, 100% { opacity: 1; scale: 3;}
+    85%, 100% { opacity: 1;}
   }
   
   .parallax-text {
@@ -185,6 +185,11 @@
     margin-top: 10px;
     font-size: 16px;
     line-height: 155%;
+  }
+  .energy-type-content1 {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 175%;
   }
   
   .energy-type-content a {
@@ -262,4 +267,10 @@
 
   hr{
     opacity: 0.25;
+  }
+
+  .windintro-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
   }
