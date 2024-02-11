@@ -105,6 +105,17 @@
     height: 825px;
     top: 20%;
     z-index: 0;
+    animation: header-image-animation linear forwards;
+    animation-timeline: view();
+  }
+
+  @keyframes fade-out {
+    to { opacity: 0; }
+  }
+  
+  @keyframes header-image-animation {
+    25% {opacity: 1;}
+    85%, 100% { opacity: 1; scale: 3;}
   }
   
   .parallax-text {
@@ -138,6 +149,10 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
     height: 400px;
     width: 650px;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: 0px;
+    animation-range-end: 655px;
   }
   
   /* Energy Sources Content*/
@@ -185,20 +200,7 @@
   
   /* Fade-in for energy sources */
   
-  .hidden {
-    opacity: 0;
-    transition: all 2s;
-   }
-  
-   @media(prefers-reduced-motion) {
-    .hidden {
-      transition: none;
-    }
-   }
-  
-   .show {
-    opacity: 1;
-   }
+ 
   
    /* stat bar */
   

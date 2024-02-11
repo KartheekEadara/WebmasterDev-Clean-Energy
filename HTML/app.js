@@ -6,32 +6,32 @@ document.addEventListener('DOMContentLoaded', function () {
         parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.54 + 'px)';
     });
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            } else {
-                entry.target.classList.remove('show');
-            }
-        });
-    });
 
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((el) => observer.observe(el));
-
-    const progressBar = document.querySelector('.skill');
-    const progressBarObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                animateProgressBar();
-                progressBarObserver.unobserve(entry.target);
-            }
-        });
-    });
-
-    progressBarObserver.observe(progressBar);
 });
 
-function animateProgressBar() {
-    // Your code to animate the progress bar goes here
-}
+const xValues = ["Solar", "Hydropower", "Wind", "Biomass", "Geothermal"];
+const yValues = [10.3, 6, 3.4, 1.2, 0.4];
+const barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Renewable Energy In The United States"
+    }
+  }
+});
